@@ -1,8 +1,8 @@
 class Pymol < Formula
   desc "OpenGL based molecular visualization system"
   homepage "http://pymol.org"
-  url "https://downloads.sourceforge.net/project/pymol/pymol/1.8/pymol-v1.8.4.0.tar.bz2"
-  sha256 "b6147befe74844dd23550461b831b2fa6d170d4456f0059cf93fb1e8cb43d279"
+  url "https://sourceforge.net/projects/pymol/files/pymol/1.8/pymol-v1.8.6.0.tar.bz2"
+  sha256 "7eaaf90ac1e1be0969291cdb1154b3631b5b6403cce1d697133d90cd37a3c565"
   head "https://svn.code.sf.net/p/pymol/code/trunk/pymol"
 
   bottle do
@@ -13,6 +13,7 @@ class Pymol < Formula
   end
 
   depends_on "glew"
+  depends_on "msgpack"
   depends_on "python" => "with-tcl-tk"
   depends_on "homebrew/dupes/tcl-tk" => ["with-threads", "with-x11"]
   depends_on :x11
